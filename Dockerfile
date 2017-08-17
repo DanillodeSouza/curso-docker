@@ -4,4 +4,6 @@ EXPOSE 80
 
 RUN apt-get update && apt-get install -y fortunes
 
+COPY Dockerfile /usr/local/apache2/htdocs/
+
 LABEL maintainer="danillosbarreto@gmail.com"
